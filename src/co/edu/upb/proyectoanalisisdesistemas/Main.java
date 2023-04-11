@@ -288,7 +288,6 @@ public class Main{
 		int general=0;
 		int opcionCliente=0;
 		int opcionC1=0;
-		int especificoC=0;
 		int opcionMenu=0;
 		int opcionProveedor=0;
 		int opcionP1=0;
@@ -1351,7 +1350,6 @@ public class Main{
 							try {
 								fechaContratacion = new SimpleDateFormat("dd/MM/yyyy").parse(fechaContratacionStr);
 							} catch (ParseException e) {
-								// TODO Auto-generated catch block
 								e.printStackTrace();
 							}
 			                    System.out.print("Cédula: ");
