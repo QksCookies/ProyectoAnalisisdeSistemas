@@ -31,18 +31,6 @@ public class GestionEmpleados {
         }
         return null;
     }
-    
-    @SuppressWarnings("null")
-	public Empleado iniciarSesion(String nombre, int codigo) throws EmpleadoNoEncontradoException, CodigoIncorrectoException{
-        Empleado empleado = buscarEmpleado(codigo);
-        if (empleado != null) {
-        	throw new EmpleadoNoEncontradoException("El empleado con el código " + codigo + " no está registrado en el sistema.");
-        } else if(empleado.getCodigo()!= codigo){
-        	throw new CodigoIncorrectoException("El código ingresado no coincide con el del empleado con código " + codigo);
-        }else {
-        	return empleado;
-        }
-    }
 
     public ArrayList<Empleado> getEmpleados() {
         return empleados;
