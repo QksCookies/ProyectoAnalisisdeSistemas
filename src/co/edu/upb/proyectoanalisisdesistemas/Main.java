@@ -296,6 +296,14 @@ public class Main{
 		do{
 				Scanner scanner= new Scanner(System.in);
 				System.out.println("BIENVENIDO A COSTAKING");
+				System.out.println("!Bienvenido a nuestra tienda en linea! "
+						+ "Aqui encontraras todo lo que necesitas para tu hogar y mas. Ofrecemos una amplia variedad de productos"
+						+ " para satisfacer tus necesidades, desde electrodomesticos hasta juguetes para los más pequeños."
+						+ " ¿Necesitas productos de limpieza e higiene? ¡Los tenemos! "
+						+ "¿Buscas herramientas para realizar reparaciones en casa? "
+						+ "Tenemos todo lo necesario en nuestra seccion de ferreteria"
+						+ ". Ademas, tambien ofrecemos productos de decoracion para darle un toque especial a tu hogar. "
+						+ "¡Explora nuestro catalogo y encuentra todo lo que necesitas en un solo lugar!");
 				System.out.println("¿Qué tipo de usuario eres?");
 				System.out.println("1.Cliente");
 				System.out.println("2.Proveedor");
@@ -308,6 +316,7 @@ public class Main{
 				case 1: //Cliente
 					System.out.println("Has seleccionado la opción de cliente:");
 					System.out.println("¿Ya tienes cuenta o deseas registrarte?");
+					System.out.println("Queremos informarte que, según la ley colombiana, los menores de 15 años no pueden realizar compras en línea. Nos tomamos muy en serio el cumplimiento de las regulaciones locales y queremos asegurarnos de que nuestros clientes estén al tanto de esta restricción. Si tienes menos de 15 años, por favor, no intentes hacer compras en nuestra tienda virtual. Si tienes alguna pregunta o inquietud, por favor contáctanos y estaremos encantados de ayudarte. Gracias por tu comprensión.");
 					System.out.println("1.Iniciar sesión");
 					System.out.println("2.Registrase");
 					System.out.println("Ingrese su opción:");
@@ -1411,5 +1420,6 @@ public class Main{
 					break; //Romper opcion invalida
 				}
 		}while(general!=4);
+		System.out.println("Gracias por utilizar nuestro servicio! Esperamos haber superado tus expectativas y haberte brindado una experiencia de compra inolvidable. ¡Te esperamos pronto de vuelta!");
 	}
 }
