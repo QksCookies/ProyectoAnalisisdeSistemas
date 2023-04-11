@@ -5,14 +5,14 @@ import java.util.Date;
 public class Empleado {
 	private String nombre;
     private String direccion;
-    private int telefono;
+    private String telefono;
     private String correoElectronico;
     private String cargo;
     private Date fechaContratacion;
     private String cedula;
     private int codigo;
 
-    public Empleado(String nombre, String direccion, int telefono, String correoElectronico, String cargo, Date fechaContratacion, String cedula, int codigo) {
+    public Empleado(String nombre, String direccion, String telefono, String correoElectronico, String cargo, Date fechaContratacion, String cedula, int codigo) {
         this.nombre = nombre;
         this.direccion = direccion;
         this.telefono = telefono;
@@ -39,11 +39,11 @@ public class Empleado {
         this.direccion = direccion;
     }
 
-    public int getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(int telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 

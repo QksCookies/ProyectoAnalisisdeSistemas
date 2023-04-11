@@ -12,9 +12,9 @@ public class Main{
 		
 		GestionEmpleados gestionEmpleados = new GestionEmpleados();
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-        Empleado empleado1 = new Empleado("Juan Perez", "Cra 10 #23-45", 1234567, "juan.perez@example.com", "Gerente", new Date(), "12345678", 10);
-        Empleado empleado2 = new Empleado("Maria Gomez", "Cra 20 #34-56", 9876543, "maria.gomez@example.com", "Asistente", new Date(), "87654321", 21);
-        Empleado empleado3 = new Empleado("Pedro Rodriguez", "Cra 30 #45-67", 2345678, "pedro.rodriguez@example.com", "Tecnico", new Date(), "56781234", 32);
+        Empleado empleado1 = new Empleado("Juan Perez", "Cra 10 #23-45", "1234567", "juan.perez@example.com", "Gerente", new Date(), "12345678", 10);
+        Empleado empleado2 = new Empleado("Maria Gomez", "Cra 20 #34-56", "9876543", "maria.gomez@example.com", "Asistente", new Date(), "87654321", 21);
+        Empleado empleado3 = new Empleado("Pedro Rodriguez", "Cra 30 #45-67", "2345678", "pedro.rodriguez@example.com", "Tecnico", new Date(), "56781234", 32);
 		gestionEmpleados.agregarEmpleado(empleado1);
 		gestionEmpleados.agregarEmpleado(empleado2);
 		gestionEmpleados.agregarEmpleado(empleado3);
@@ -1369,7 +1369,8 @@ public class Main{
 			                    scanner.nextLine();
 			                    String direccion = scanner.nextLine();
 			                    System.out.print("Teléfono: ");
-			                    int telefono = scanner.nextInt();
+			                    scanner.nextLine();
+			                    String telefono = scanner.nextLine();
 			                    System.out.print("Correo electrónico: ");
 			                    String correoElectronico = scanner.next();
 			                    System.out.print("Cargo: ");
