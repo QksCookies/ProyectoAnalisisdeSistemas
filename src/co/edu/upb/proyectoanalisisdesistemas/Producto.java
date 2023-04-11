@@ -37,10 +37,6 @@ public class Producto {
         return precio * cantidadDisponible;
     }
 
-    public String toString() {
-        return "Producto: " + nombre + "\nDescripción: " + descripcion + "\nPrecio: " + precio + "\nCantidad disponible: " + cantidadDisponible + "\n";
-    }
-
 	public void restarCantidad(int cantidadDisponible2) {
 		
 	}

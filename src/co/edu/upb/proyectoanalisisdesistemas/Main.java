@@ -414,7 +414,9 @@ public class Main{
 														    String respuesta4 = scanner.next().trim();
 														    if (respuesta4.equalsIgnoreCase("si")) {
 														        double totalCompra = carrito.calcularTotal();
+														        double impuesto= 0.19;
 														        System.out.println("El total de tu compra es $" + totalCompra);
+														        System.out.println("Impuestos aplicados 19% "+ totalCompra*impuesto);
 														        System.out.println("Gracias por tu compra. ¡Hasta la próxima!");
 														        System.out.println("------------------------------------");
 														        System.out.println("Factura Supermercado COSTAKING");
@@ -422,7 +424,7 @@ public class Main{
 														        System.out.println("Cédula: " + cliente.getCedula());
 														        System.out.println("Código: " + cliente.getCodigo());
 														        System.out.println("------------------------------------");
-														        System.out.println("Impuestos: " + totalCompra*0.19);
+														        System.out.println("Impuestos: " + totalCompra*impuesto);
 														        System.out.println("------------------------------------");
 														        System.out.println("Total: " + totalCompra);
 														        inventario.actualizarInventario(carrito);
@@ -486,7 +488,9 @@ public class Main{
 														    String respuesta4 = scanner.next().trim();
 														    if (respuesta4.equalsIgnoreCase("si")) {
 														        double totalCompra = carrito.calcularTotal();
+														        double impuesto= 0.19;
 														        System.out.println("El total de tu compra es $" + totalCompra);
+														        System.out.println("Impuestos aplicados 19% "+ totalCompra*impuesto);
 														        System.out.println("Gracias por tu compra. ¡Hasta la próxima!");
 														        System.out.println("------------------------------------");
 														        System.out.println("Factura Supermercado COSTAKING");
@@ -494,7 +498,7 @@ public class Main{
 														        System.out.println("Cédula: " + cliente.getCedula());
 														        System.out.println("Código: " + cliente.getCodigo());
 														        System.out.println("------------------------------------");
-														        System.out.println("Impuestos: " + totalCompra*0.19);
+														        System.out.println("Impuestos: " + totalCompra*impuesto);
 														        System.out.println("------------------------------------");
 														        System.out.println("Total: " + totalCompra);
 														        inventario.actualizarInventario(carrito);
@@ -558,7 +562,9 @@ public class Main{
 														    String respuesta4 = scanner.next().trim();
 														    if (respuesta4.equalsIgnoreCase("si")) {
 														        double totalCompra = carrito.calcularTotal();
+														        double impuesto= 0.19;
 														        System.out.println("El total de tu compra es $" + totalCompra);
+														        System.out.println("Impuestos aplicados 19% "+ totalCompra*impuesto);
 														        System.out.println("Gracias por tu compra. ¡Hasta la próxima!");
 														        System.out.println("------------------------------------");
 														        System.out.println("Factura Supermercado COSTAKING");
@@ -566,7 +572,7 @@ public class Main{
 														        System.out.println("Cédula: " + cliente.getCedula());
 														        System.out.println("Código: " + cliente.getCodigo());
 														        System.out.println("------------------------------------");
-														        System.out.println("Impuestos: " + totalCompra*0.19);
+														        System.out.println("Impuestos: " + totalCompra*impuesto);
 														        System.out.println("------------------------------------");
 														        System.out.println("Total: " + totalCompra);
 														        inventario.actualizarInventario(carrito);
@@ -630,7 +636,9 @@ public class Main{
 														    String respuesta4 = scanner.next().trim();
 														    if (respuesta4.equalsIgnoreCase("si")) {
 														        double totalCompra = carrito.calcularTotal();
+														        double impuesto= 0.19;
 														        System.out.println("El total de tu compra es $" + totalCompra);
+														        System.out.println("Impuestos aplicados 19% "+ totalCompra*impuesto);
 														        System.out.println("Gracias por tu compra. ¡Hasta la próxima!");
 														        System.out.println("------------------------------------");
 														        System.out.println("Factura Supermercado COSTAKING");
@@ -638,7 +646,7 @@ public class Main{
 														        System.out.println("Cédula: " + cliente.getCedula());
 														        System.out.println("Código: " + cliente.getCodigo());
 														        System.out.println("------------------------------------");
-														        System.out.println("Impuestos: " + totalCompra*0.19);
+														        System.out.println("Impuestos: " + totalCompra*impuesto);
 														        System.out.println("------------------------------------");
 														        System.out.println("Total: " + totalCompra);
 														        inventario.actualizarInventario(carrito);
@@ -702,7 +710,9 @@ public class Main{
 														    String respuesta4 = scanner.next().trim();
 														    if (respuesta4.equalsIgnoreCase("si")) {
 														        double totalCompra = carrito.calcularTotal();
+														        double impuesto= 0.19;
 														        System.out.println("El total de tu compra es $" + totalCompra);
+														        System.out.println("Impuestos aplicados 19% "+ totalCompra*impuesto);
 														        System.out.println("Gracias por tu compra. ¡Hasta la próxima!");
 														        System.out.println("------------------------------------");
 														        System.out.println("Factura Supermercado COSTAKING");
@@ -710,7 +720,7 @@ public class Main{
 														        System.out.println("Cédula: " + cliente.getCedula());
 														        System.out.println("Código: " + cliente.getCodigo());
 														        System.out.println("------------------------------------");
-														        System.out.println("Impuestos: " + totalCompra*0.19);
+														        System.out.println("Impuestos: " + totalCompra*impuesto);
 														        System.out.println("------------------------------------");
 														        System.out.println("Total: " + totalCompra);
 														        inventario.actualizarInventario(carrito);
@@ -774,7 +784,9 @@ public class Main{
 														    String respuesta4 = scanner.next().trim();
 														    if (respuesta4.equalsIgnoreCase("si")) {
 														        double totalCompra = carrito.calcularTotal();
+														        double impuesto= 0.19;
 														        System.out.println("El total de tu compra es $" + totalCompra);
+														        System.out.println("Impuestos aplicados 19% "+ totalCompra*impuesto);
 														        System.out.println("Gracias por tu compra. ¡Hasta la próxima!");
 														        System.out.println("------------------------------------");
 														        System.out.println("Factura Supermercado COSTAKING");
@@ -782,7 +794,7 @@ public class Main{
 														        System.out.println("Cédula: " + cliente.getCedula());
 														        System.out.println("Código: " + cliente.getCodigo());
 														        System.out.println("------------------------------------");
-														        System.out.println("Impuestos: " + totalCompra*0.19);
+														        System.out.println("Impuestos: " + totalCompra*impuesto);
 														        System.out.println("------------------------------------");
 														        System.out.println("Total: " + totalCompra);
 														        inventario.actualizarInventario(carrito);
@@ -846,7 +858,9 @@ public class Main{
 														    String respuesta4 = scanner.next().trim();
 														    if (respuesta4.equalsIgnoreCase("si")) {
 														        double totalCompra = carrito.calcularTotal();
+														        double impuesto= 0.19;
 														        System.out.println("El total de tu compra es $" + totalCompra);
+														        System.out.println("Impuestos aplicados 19% "+ totalCompra*impuesto);
 														        System.out.println("Gracias por tu compra. ¡Hasta la próxima!");
 														        System.out.println("------------------------------------");
 														        System.out.println("Factura Supermercado COSTAKING");
@@ -854,7 +868,7 @@ public class Main{
 														        System.out.println("Cédula: " + cliente.getCedula());
 														        System.out.println("Código: " + cliente.getCodigo());
 														        System.out.println("------------------------------------");
-														        System.out.println("Impuestos: " + totalCompra*0.19);
+														        System.out.println("Impuestos: " + totalCompra*impuesto);
 														        System.out.println("------------------------------------");
 														        System.out.println("Total: " + totalCompra);
 														        inventario.actualizarInventario(carrito);
@@ -918,7 +932,9 @@ public class Main{
 														    String respuesta4 = scanner.next().trim();
 														    if (respuesta4.equalsIgnoreCase("si")) {
 														        double totalCompra = carrito.calcularTotal();
+														        double impuesto= 0.19;
 														        System.out.println("El total de tu compra es $" + totalCompra);
+														        System.out.println("Impuestos aplicados 19% "+ totalCompra*impuesto);
 														        System.out.println("Gracias por tu compra. ¡Hasta la próxima!");
 														        System.out.println("------------------------------------");
 														        System.out.println("Factura Supermercado COSTAKING");
@@ -926,7 +942,7 @@ public class Main{
 														        System.out.println("Cédula: " + cliente.getCedula());
 														        System.out.println("Código: " + cliente.getCodigo());
 														        System.out.println("------------------------------------");
-														        System.out.println("Impuestos: " + totalCompra*0.19);
+														        System.out.println("Impuestos: " + totalCompra*impuesto);
 														        System.out.println("------------------------------------");
 														        System.out.println("Total: " + totalCompra);
 														        inventario.actualizarInventario(carrito);
@@ -990,7 +1006,9 @@ public class Main{
 														    String respuesta4 = scanner.next().trim();
 														    if (respuesta4.equalsIgnoreCase("si")) {
 														        double totalCompra = carrito.calcularTotal();
+														        double impuesto= 0.19;
 														        System.out.println("El total de tu compra es $" + totalCompra);
+														        System.out.println("Impuestos aplicados 19% "+ totalCompra*impuesto);
 														        System.out.println("Gracias por tu compra. ¡Hasta la próxima!");
 														        System.out.println("------------------------------------");
 														        System.out.println("Factura Supermercado COSTAKING");
@@ -998,7 +1016,7 @@ public class Main{
 														        System.out.println("Cédula: " + cliente.getCedula());
 														        System.out.println("Código: " + cliente.getCodigo());
 														        System.out.println("------------------------------------");
-														        System.out.println("Impuestos: " + totalCompra*0.19);
+														        System.out.println("Impuestos: " + totalCompra*impuesto);
 														        System.out.println("------------------------------------");
 														        System.out.println("Total: " + totalCompra);
 														        inventario.actualizarInventario(carrito);
@@ -1062,7 +1080,9 @@ public class Main{
 														    String respuesta4 = scanner.next().trim();
 														    if (respuesta4.equalsIgnoreCase("si")) {
 														        double totalCompra = carrito.calcularTotal();
+														        double impuesto= 0.19;
 														        System.out.println("El total de tu compra es $" + totalCompra);
+														        System.out.println("Impuestos aplicados 19% "+ totalCompra*impuesto);
 														        System.out.println("Gracias por tu compra. ¡Hasta la próxima!");
 														        System.out.println("------------------------------------");
 														        System.out.println("Factura Supermercado COSTAKING");
@@ -1070,7 +1090,7 @@ public class Main{
 														        System.out.println("Cédula: " + cliente.getCedula());
 														        System.out.println("Código: " + cliente.getCodigo());
 														        System.out.println("------------------------------------");
-														        System.out.println("Impuestos: " + totalCompra*0.19);
+														        System.out.println("Impuestos: " + totalCompra*impuesto);
 														        System.out.println("------------------------------------");
 														        System.out.println("Total: " + totalCompra);
 														        inventario.actualizarInventario(carrito);
@@ -1134,7 +1154,9 @@ public class Main{
 														    String respuesta4 = scanner.next().trim();
 														    if (respuesta4.equalsIgnoreCase("si")) {
 														        double totalCompra = carrito.calcularTotal();
+														        double impuesto= 0.19;
 														        System.out.println("El total de tu compra es $" + totalCompra);
+														        System.out.println("Impuestos aplicados 19% "+ totalCompra*impuesto);
 														        System.out.println("Gracias por tu compra. ¡Hasta la próxima!");
 														        System.out.println("------------------------------------");
 														        System.out.println("Factura Supermercado COSTAKING");
@@ -1142,7 +1164,7 @@ public class Main{
 														        System.out.println("Cédula: " + cliente.getCedula());
 														        System.out.println("Código: " + cliente.getCodigo());
 														        System.out.println("------------------------------------");
-														        System.out.println("Impuestos: " + totalCompra*0.19);
+														        System.out.println("Impuestos: " + totalCompra*impuesto);
 														        System.out.println("------------------------------------");
 														        System.out.println("Total: " + totalCompra);
 														        inventario.actualizarInventario(carrito);
