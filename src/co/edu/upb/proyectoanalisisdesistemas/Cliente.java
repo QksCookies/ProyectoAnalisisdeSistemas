@@ -40,4 +40,60 @@ public class Cliente {
     public String getCorreoElectronico(){
     	return correoElectronico;
     }
+	 public boolean guardarDatosClienteEnArchivoTxt( String codigo,String cedula,String nombre,String contrasena,String telefono, String correoElectronico) {
+		File archivo;
+		FileWriter write;
+		BufferedWriter bw;
+		PrintWriter wr;
+		archivo= new File ("D:\\Documents\\ArchivosTxt\\Clientes.txt");
+		
+		
+		if( !archivo.exists()) {
+			try {
+				archivo.createNewFile();
+				write = new FileWriter(archivo,true);
+				bw =new BufferedWriter(write);
+				wr = new PrintWriter(bw);
+				
+				wr.println("---------------------------------------------------\n");
+				wr.write("\n"+codigo);
+				wr.write("\n"+cedula);
+				wr.write("\n"+nombre);
+				wr.write("\n"+contrasena);
+				wr.write("\n"+telefono);
+				wr.write("\n"+correoElectronico);
+				wr.write("\n-----------------------------------------------------\n");
+				wr.close();
+				bw.close();
+			}
+			catch(IOException e) {
+				System.out.println("Error");
+			}
+		}
+		else {
+			try {
+				archivo.createNewFile();
+				write = new FileWriter(archivo,true);
+				bw =new BufferedWriter(write);
+				wr = new PrintWriter(bw);
+				
+				wr.println("---------------------------------------------------\n");
+				wr.write("\n"+codigo);
+				wr.write("\n"+cedula);
+				wr.write("\n"+nombre);
+				wr.write("\n"+contrasena);
+				wr.write("\n"+telefono);
+				wr.write("\n"+correoElectronico);
+				wr.write("\n-----------------------------------------------------\n");
+				wr.close();
+				bw.close();
+			}
+			catch(IOException e) {
+				System.out.println("Error");
+			}
+		}
+		
+		return true;
+		
+	}
 }
