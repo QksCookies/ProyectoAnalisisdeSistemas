@@ -292,7 +292,9 @@ public class Main{
 		int opcionProveedor=0;
 		int opcionP1=0;
 		int opcionE=0;
-		
+		int edad= 0 ;
+                int datos=0;
+                
 		do{
 				Scanner scanner= new Scanner(System.in);
 				System.out.println("BIENVENIDO A COSTAKING");
@@ -312,8 +314,21 @@ public class Main{
 				System.out.println("5.Salir");
 				System.out.println("Ingrese su opción:");
 				general=scanner.nextInt();
+                                System.out.println("Porfavor proporcione su edad : ");
+                                edad=scanner.nextInt();
+                                
+				if (edad<=15) {general=5; System.out.println("No podra utilizar el sistema debido a que no cumple con la edad requqeida para poder utilizar la tirnda virtual"); } else { }
+                                
+                                System.out.println("¿Estás de acuerdo en permitir que la tienda virtual envíe tus datos y movimientos a Google y al Gobierno Colombiano? Ten en cuenta que si no aceptas, no podrás acceder a la aplicación.");
+                                System.out.println("Si estas de acuerdo digita el numero 1 " );
+                                
+                                datos=scanner.nextInt();
+                                if (datos!=1) {
+                                     general =5;
+                                     System.out.println("Lo siento, no puedes usar la tienda virtual porque no has aceptado el envío de tus datos y movimientos a Google y al Gobierno Colombiano.");
+                                 }
 				
-				switch(general){
+                                switch(general){
 				case 1: //Cliente
 					System.out.println("Has seleccionado la opción de cliente:");
 					System.out.println("¿Ya tienes cuenta o deseas registrarte?");
@@ -1452,3 +1467,4 @@ public class Main{
 		System.out.println("Gracias por utilizar nuestro servicio! Esperamos haber superado tus expectativas y haberte brindado una experiencia de compra inolvidable. ¡Te esperamos pronto de vuelta!");
 	}
 }
+
