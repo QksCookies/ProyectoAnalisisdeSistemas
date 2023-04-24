@@ -86,4 +86,63 @@ public class Empleado {
 	public void setCodigo(int codigo) {
 		this.codigo = codigo;
 	}
+	public boolean GuardarDatosEmpleadoEnArchivoTxt(String nombre, String direccion, String telefono, String correoElectronico, String cargo, int fechaContratacion, String cedula, int codigo) {
+		File archivo;
+		FileWriter write;
+		BufferedWriter bw;
+		PrintWriter wr;
+		archivo= new File ("D:\\Documents\\ArchivosTxt\\Empleados.txt");
+		
+		
+		if( !archivo.exists()) {
+			try {
+				archivo.createNewFile();
+				write = new FileWriter(archivo,true);
+				bw =new BufferedWriter(write);
+				wr = new PrintWriter(bw);
+				
+				wr.println("---------------------------------------------------\n");
+				wr.write("\n"+direccion);
+				wr.write("\n"+telefono);
+				wr.write("\n"+correoElectronico);
+				wr.write("\n"+cargo);
+				wr.write("\n"+fechaContratacion);
+				wr.write("\n"+cedula);
+				wr.write("\n"+codigo);
+
+				wr.write("\n-----------------------------------------------------\n");
+				wr.close();
+				bw.close();
+			}
+			catch(IOException e) {
+				System.out.println("Error");
+			}
+		}
+		else {
+			try {
+				archivo.createNewFile();
+				write = new FileWriter(archivo,true);
+				bw =new BufferedWriter(write);
+				wr = new PrintWriter(bw);
+				
+				wr.println("---------------------------------------------------\n");
+				wr.write("\n"+direccion);
+				wr.write("\n"+telefono);
+				wr.write("\n"+correoElectronico);
+				wr.write("\n"+cargo);
+				wr.write("\n"+fechaContratacion);
+				wr.write("\n"+cedula);
+				wr.write("\n"+codigo);
+				wr.write("\n-----------------------------------------------------\n");
+				wr.close();
+				bw.close();
+			}
+			catch(IOException e) {
+				System.out.println("Error");
+			}
+		}
+		
+		return true;
+		
+	}
 }
