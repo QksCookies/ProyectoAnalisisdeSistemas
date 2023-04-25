@@ -50,7 +50,7 @@ public class Producto {
     }	
 	
     public double calcularPrecioTotalProducto() {
-        return precio * cantidadDisponible + descuento;
+        return precio * cantidadDisponible;
     }
 
 	public void restarCantidad(int cantidadDisponible2) {
