@@ -317,7 +317,16 @@ public class Main{
                                 System.out.println("Porfavor proporcione su edad : ");
                                 edad=scanner.nextInt();
                                 
-				
+				if (edad<=15) {general=5; System.out.println("No podra utilizar el sistema debido a que no cumple con la edad requqeida para poder utilizar la tirnda virtual"); } else { }
+                                
+                                System.out.println("¿Estás de acuerdo en permitir que la tienda virtual envíe tus datos y movimientos a Google y al Gobierno Colombiano? Ten en cuenta que si no aceptas, no podrás acceder a la aplicación.");
+                                System.out.println("Si estas de acuerdo digita el numero 1 " );
+                                
+                                datos=scanner.nextInt();
+                                if (datos!=1) {
+                                     general =5;
+                                     System.out.println("Lo siento, no puedes usar la tienda virtual porque no has aceptado el envío de tus datos y movimientos a Google y al Gobierno Colombiano.");
+                                 }
 				
                                 switch(general){
 				case 1: //Cliente
