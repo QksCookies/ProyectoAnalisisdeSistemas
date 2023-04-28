@@ -297,20 +297,13 @@ public class Main{
                 
 		do{
 				Scanner scanner= new Scanner(System.in);
-				System.out.println("BIENVENIDO A COSTAKING");
-				System.out.println("!Bienvenido a nuestra tienda en linea! "
-						+ "Aqui encontraras todo lo que necesitas para tu hogar y mas. Ofrecemos una amplia variedad de productos"
-						+ " para satisfacer tus necesidades, desde electrodomesticos hasta juguetes para los más pequeños."
-						+ " ¿Necesitas productos de limpieza e higiene? ¡Los tenemos! "
-						+ "¿Buscas herramientas para realizar reparaciones en casa? "
-						+ "Tenemos todo lo necesario en nuestra seccion de ferreteria"
-						+ ". Ademas, tambien ofrecemos productos de decoracion para darle un toque especial a tu hogar. "
-						+ "¡Explora nuestro catalogo y encuentra todo lo que necesitas en un solo lugar!");
+				Funciones.bienvenidaTiendaEnLinea();
+				Funciones.mostrarinfoPromociones();
 				System.out.println("¿Qué tipo de usuario eres?");
 				System.out.println("1.Cliente");
 				System.out.println("2.Proveedor");
 				System.out.println("3.Empleado");
-				System.out.println("4.Informacion");
+				System.out.println("4.Informacion y promociones");
 				System.out.println("5.Salir");
 				System.out.println("Ingrese su opción:");
 				general=scanner.nextInt();
@@ -1435,18 +1428,16 @@ public class Main{
 				System.out.println("1-Leer la politica de la empresa");
 				System.out.println("2-Leer sobre los creadores del software");
 				System.out.println("3-Informacion sobre Atencion al cliente");
+				System.out.println("4-Si estas interesado en saber la ubicacion de nuestras tiendas fisicas");
+				System.out.println("5- saber sobre nuestras promociones");
 				numero=scanner.nextInt();
               switch (numero) {
 			
-              case 1: System.out.println("Al utilizar nuestro sitio web y tienda en linea, aceptas nuestros terminos y condiciones. Puedes comprar nuestros productos a traves de nuestro sitio web y aceptamos pagos mediante los metodos especificados en el sitio. Nos esforzamos por enviar tus productos dentro de 2-3 dias habiles y ofrecemos envio gratuito dentro de Colombia en compras superiores a $50.000 COP. Los tiempos de entrega pueden variar dependiendo de la ubicacion. Aceptamos devoluciones de articulos nuevos y sin usar dentro de los 30 dias posteriores a la compra. Consulta nuestra pagina de devoluciones para mas informacion. Protegemos tu privacidad y datos personales. Consulta nuestra politica de privacidad para mas informacion. Nos reservamos el derecho de modificar esta politica en cualquier momento sin previo aviso.");
-            	  
-            	  break;
-              case 2:System.out.println("Queremos que sepas que detras de esta plataforma hay un equipo de profesionales comprometidos con brindarte la mejor experiencia de compra en linea. Los creadores de nuestra tienda virtual son Juliana Chavez, Jean Pena, Angie Villarreal, Juan Munoz y Fernando Vega. Ademas, contamos con la colaboracion del profesor Alvaro Hernandez, quien nos ha brindado su experiencia y conocimiento en el desarrollo de esta plataforma. Esperamos que te sientas seguro y confiado al hacer tus compras con nosotros. ¡Gracias por elegirnos!");
-            	  
-            	  break;
-              case 3: System.out.println(" Queremos asegurarnos de brindarte la mejor atencion al cliente posible en nuestra tienda virtual. Por eso, hemos creado una cuenta de Instagram dedicada exclusivamente a la atencion al cliente. Si necesitas ayuda con tu compra, devolucion, o simplemente tienes una pregunta, no dudes en contactarnos a traves de @costaking_tiendavirtual. Tambien puedes comunicarte con nosotros a traves de nuestro numero de telefono +573157419040 o enviarnos un correo electronico a costaking@gmail.com. Estamos aqui para ayudarte en lo que necesites. ¡Gracias por elegir nuestra tienda virtual!");
-            	  
-            	  break;
+              case 1:Funciones.terminosYCondiciones();  break;
+              case 2: Funciones.equipoDeTrabajo();  break;
+              case 3: Funciones.servicioAlCliente();  break;
+              case 4:Funciones.mostrarUbicaciones(); break;
+              case 5: Funciones.mostrarNuestrasPromociones();  break;
               
               
           	  default: //Opcion invalida
@@ -1464,7 +1455,8 @@ public class Main{
 					break; //Romper opcion invalida
 				}
 		}while(general!=5);
-		System.out.println("Gracias por utilizar nuestro servicio! Esperamos haber superado tus expectativas y haberte brindado una experiencia de compra inolvidable. ¡Te esperamos pronto de vuelta!");
+		Funciones.despedida();
 	}
 }
+
 
