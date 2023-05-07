@@ -93,6 +93,62 @@ public class Proveedor {
                 System.out.println("Se ha agregado " + producto.getCantidadDisponible() + " unidades de " + producto.getNombre() + " al inventario.");
                 break;
             }
+		 public boolean  guardarDatosProveedorEnArchivoTxt(String codigo,String nombre1,String contraseña,String direccion1,String telefono,String correoElectronico) {
+		File archivo;
+		FileWriter write;
+		BufferedWriter bw;
+		PrintWriter wr;
+		archivo= new File ("D:\\Documents\\ArchivosTxt\\Proveedores.txt");
+		
+		
+		if( !archivo.exists()) {
+			try {
+				archivo.createNewFile();
+				write = new FileWriter(archivo,true);
+				bw =new BufferedWriter(write);
+				wr = new PrintWriter(bw);
+				
+				wr.println("---------------------------------------------------\n");
+				wr.write("\n"+codigo);
+				wr.write("\n"+nombre1);
+				wr.write("\n"+contraseña);
+				wr.write("\n"+direccion1);
+				wr.write("\n"+telefono);
+				wr.write("\n"+correoElectronico);
+				wr.write("\n-----------------------------------------------------\n");
+				wr.close();
+				bw.close();
+			}
+			catch(IOException e) {
+				System.out.println("Error");
+			}
+		}
+		else {
+			try {
+				archivo.createNewFile();
+				write = new FileWriter(archivo,true);
+				bw =new BufferedWriter(write);
+				wr = new PrintWriter(bw);
+				
+				wr.println("---------------------------------------------------\n");
+				wr.write("\n"+codigo);
+				wr.write("\n"+nombre1);
+				wr.write("\n"+contraseña);
+				wr.write("\n"+direccion1);
+				wr.write("\n"+telefono);
+				wr.write("\n"+correoElectronico);
+				wr.write("\n-----------------------------------------------------\n");
+				wr.close();
+				bw.close();
+			}
+			catch(IOException e) {
+				System.out.println("Error");
+			}
+		}
+		
+		return true;
+		
+	}
         }
         if (!encontrado) {
             System.out.println("No se ha encontrado el producto " + producto.getNombre() + ". Por favor, primero agregue el producto antes de aumentar el inventario.");
