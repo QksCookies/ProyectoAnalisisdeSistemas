@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Carrito {
 	private List<Producto> productos;
-
+	//fERNANDO
     public Carrito() {
         productos = new ArrayList<Producto>();
     }
