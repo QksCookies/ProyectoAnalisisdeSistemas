@@ -1,5 +1,5 @@
 package co.edu.upb.proyectoanalisisdesistemas;
-//dfvnjsdbvujsdbvjhsdbvjh
+
 public class Funciones {
 	
 	public static void mostrarUbicaciones() {
