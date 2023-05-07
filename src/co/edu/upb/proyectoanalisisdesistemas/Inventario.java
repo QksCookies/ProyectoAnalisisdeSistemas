@@ -14,7 +14,7 @@ public class Inventario {
 	public ArrayList <Producto> librosYPapeleria;
 	public ArrayList <Producto> mascotas;
 	public ArrayList <Producto> saludYMedicamentos;
-	
+//mojarrassssssss
 	public Inventario() {
 		alimentos= new ArrayList<Producto>();
 		electrodomesticos= new ArrayList<Producto>();
