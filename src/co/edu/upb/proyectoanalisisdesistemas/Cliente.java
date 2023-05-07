@@ -7,6 +7,7 @@ public class Cliente {
     private String contrasena;
     private String telefono;
     private String correoElectronico;
+	//bmirnjsdnvjsdfnbjdfnjbndfjbndfj
     //hbthrthrtjnrtjyrjyj
     public Cliente(String codigo, String cedula, String nombre, String contrasena, String telefono, String correoElectronico){
         this.codigo = codigo;
