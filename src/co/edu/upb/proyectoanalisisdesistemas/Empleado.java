@@ -11,7 +11,7 @@ public class Empleado {
     private Date fechaContratacion;
     private String cedula;
     private int codigo;
-
+//FERNANDO
     public Empleado(String nombre, String direccion, String telefono, String correoElectronico, String cargo, Date fechaContratacion, String cedula, int codigo) {
         this.nombre = nombre;
         this.direccion = direccion;
